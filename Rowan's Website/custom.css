@@ -1,0 +1,253 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+/* Define custom font */
+@font-face {
+    font-family: 'ComicSansCustom';
+    src: url('ldfcomicsans-font/Ldfcomicsans-jj7l.ttf') format('truetype');
+}
+
+/* Apply the custom font */
+body {
+    font-family: 'ComicSansCustom', 'Mansalva', cursive;
+    background: linear-gradient(to right, #1e1a66, #5b1d66, #7a1e4d); /* Darker horizontal gradient */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-position: center;
+    margin: 0; /* Remove default margin for a seamless background */
+    animation: fadeIn 2s ease-in-out; /* Apply fade-in animation to the entire site */
+}
+
+.sub-head{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.signals {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: azure;
+}
+
+#signals {
+    color: rgb(202, 168, 234);
+}
+
+.centered {
+    position: absolute;
+    margin-top: -16.7%;
+    margin-left: 7.3%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.heading {
+    width: 35%; /* Reduced width for compactness */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0%;
+    box-shadow: 10px 10px 10px;
+}
+
+.heading:hover {
+    animation-name: none
+}
+
+div.heading {
+    background: linear-gradient(to right, #1e1a66, #5b1d66, #7a1e4d); /* Match background gradient */
+    color: white; /* Text color for contrast */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 20px auto; /* Center and add spacing */
+    width: 80%; /* Adjust width */
+    text-align: center; /* Center text */
+}
+
+div {
+    background: linear-gradient(to right, #2a237a, #6b2a7a, #8a2a5d); /* Darker and more vibrant gradient */
+    color: white; /* Ensure text is readable */
+    padding: 20px;
+    border-radius: 15px; /* More rounded corners for a distinctive look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border for added detail */
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px; /* Adjusted font size for compactness */
+}
+
+/* General table adjustments */
+table {
+    width: 100%; /* Set table width to occupy full width of the page */
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Button styles */
+.image-button {
+    display: inline-block;
+    width: 250px; /* Increased width */
+    height: 250px; /* Increased height */
+    background-image: url('patch.png');
+    background-size: contain; /* Ensure the entire patch is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white; /* Text color */
+    font-family: 'Mansalva', cursive;
+    font-size: 24px; /* Increased font size for better readability */
+    line-height: 250px; /* Adjusted to center text vertically */
+    cursor: pointer;
+}
+
+.image-button:hover {
+    opacity: 0.9; /* Subtle hover effect */
+    transform: scale(1.05); /* Slight zoom on hover */
+transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+/* Button styles */
+.button {
+    background-color: #1e1a66; /* Match darker background gradient */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    font-family: 'ComicSansCustom', 'Mansalva', cursive;
+}
+
+.button:hover {
+    background-color: #5b1d66; /* Slightly lighter shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.button:active {
+    background-color: #7a1e4d; /* Even lighter shade when clicked */
+    transform: scale(0.95); /* Slight shrink effect */
+}
+
+video {
+    width: 50%; /* Further reduced width for a smaller size */
+    max-width: 320px; /* Adjusted maximum width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra spacing below the video */
+    margin: 0 auto; /* Centers the video */
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeSlideIn 1.5s ease-in-out;
+}
+
+/* Initial state for scroll animation */
+.scroll-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Final state when element is in view */
+.scroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center align the footer text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text for contrast */
+    padding: 10px 20px; /* Add padding for spacing */
+    font-size: 18px; /* Slightly larger font size */
+    border-top: 2px solid rgba(255, 255, 255, 0.2); /* Subtle top border */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+footer a {
+    color: #ffcc00; /* Bright color for the link */
+    font-weight: bold; /* Make the link text bold */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer a:hover {
+    color: #ffffff; /* Change link color on hover */
+}
+
+/* Fade-in animation for the entire site */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover animation */
+@keyframes hover {
+    100% {
+        background-color: rgb(152, 107, 49);
+    }
+    100% {
+        translate: 0px -15px;
+        box-shadow: 10px 10px 10px;
+        filter: brightness(2);
+    }
+}
+
+/* Fade-slide-in animation */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    video {
+        width: 80%;
+        max-width: none;
+    }
+    table {
+        display: block; /* Stack table rows */
+        width: 100%;
+    }
+
+    table tr {
+        display: flex;
+        flex-direction: column; /* Stack table cells vertically */
+    }
+
+    table td {
+        width: 90%; /* Make table cells take full width */
+        margin-bottom: 10px; /* Add spacing between cells */
+        margin-left: 2%;
+    }
+}
